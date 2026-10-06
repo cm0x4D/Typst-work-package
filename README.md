@@ -5,6 +5,38 @@ Define work packages with role-based hours and material budgets, and render aggr
 
 ![](example/thumbnail.png)
 
+## Installation
+
+Clone this repository directly into your local Typst package directory:
+
+### macOS
+
+```bash
+mkdir -p "$HOME/Library/Application Support/typst/packages/local/work-packages"
+git clone https://github.com/cm0x4D/Typst-work-package.git "$HOME/Library/Application Support/typst/packages/local/work-packages/0.1.0"
+```
+
+### Linux
+
+```bash
+mkdir -p "${XDG_DATA_HOME:-$HOME/.local/share}/typst/packages/local/work-packages"
+git clone https://github.com/cm0x4D/Typst-work-package.git "${XDG_DATA_HOME:-$HOME/.local/share}/typst/packages/local/work-packages/0.1.0"
+```
+
+### Windows
+
+**PowerShell:**
+```powershell
+New-Item -ItemType Directory -Path "$env:APPDATA\typst\packages\local\work-packages" -Force
+git clone https://github.com/cm0x4D/Typst-work-package.git "$env:APPDATA\typst\packages\local\work-packages\0.1.0"
+```
+
+**Command Prompt:**
+```cmd
+if not exist "%APPDATA%\typst\packages\local\work-packages" mkdir "%APPDATA%\typst\packages\local\work-packages"
+git clone https://github.com/cm0x4D/Typst-work-package.git "%APPDATA%\typst\packages\local\work-packages\0.1.0"
+```
+
 ## Usage
 
 ```typst
