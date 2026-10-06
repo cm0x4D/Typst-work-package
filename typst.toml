@@ -1,0 +1,22 @@
+[package]
+name = "work-packages"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Michael Clausen <michael.clausen@hevs.ch>"]
+license = "MIT"
+description = "Define, track, and render structured project work packages, staff allocations, and automated budget summaries."
+repository = "https://github.com/cm0x4d/typst-work-packages"
+homepage = "https://github.com/cm0x4d/typst-work-packages"
+keywords = ["work-package", "project-management", "budget", "cost-calculation", "offer"]
+categories = ["utility", "office"]
+compiler = "0.15.0"
+exclude = [
+  ".github/",
+  "example/",
+  ".gitignore",
+]
+
+[template]
+path = "example"
+entrypoint = "sample.typ"
+thumbnail = "thumbnail.png"
