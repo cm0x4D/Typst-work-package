@@ -6,7 +6,10 @@
     "Professor": 155,
     "Senior Researcher": 105,
     "Assistant": 70,
-  )
+  ),
+  thousand-seperator: "'",
+  digits: 0,
+  round: 10
 )
 
 = Project Budget
@@ -43,6 +46,11 @@
   ),
 )
 
+#pagebreak()
+
 == Summary
 
-#wp.summary()
+#wp.summary(
+    discount: 1000,
+    round: 1000
+)

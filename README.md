@@ -4,6 +4,7 @@ A clean Typst package for managing engineering proposals, academic grant applica
 Define work packages with role-based hours and material budgets, and render aggregate cost tables automatically.
 
 ![](example/thumbnail.png)
+![](example/thumbnail2.png)
 
 ## Installation
 
@@ -48,7 +49,10 @@ git clone https://github.com/cm0x4D/Typst-work-package.git "%APPDATA%\typst\pack
     "Professor": 155,
     "Senior Researcher": 105,
     "Assistant": 70,
-  )
+  ),
+  thousand-seperator: "'",
+  digits: 0,
+  round: 10
 )
 
 = Project Budget
@@ -85,7 +89,12 @@ git clone https://github.com/cm0x4D/Typst-work-package.git "%APPDATA%\typst\pack
   ),
 )
 
+#pagebreak()
+
 == Summary
 
-#wp.summary()
+#wp.summary(
+    discount: 1000,
+    round: 1000
+)
 ```
